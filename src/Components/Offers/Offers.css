@@ -1,0 +1,40 @@
+.offers {
+    width: 100%;
+    height: 100vh; /* Përdorim 100% të lartësisë së ekranit */
+    display: flex;
+    align-items: center; /* Qëndron në qendër verticalisht */
+    justify-content: center; /* Qëndron në qendër horizontalisht */
+    background: linear-gradient(to top, #4f2f16bf 0%,#e3c4bbc9 100%);
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.offers-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Për të pozicionuar butonin në qendër të imazhit */
+}
+
+.offers-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offers-button {
+    position: absolute; /* Pozicionimi i butonit në qendër të imazhit */
+    bottom: 20px; /* Distanca nga fundi i imazhit */
+    background: transparent;
+    border: 1px solid;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offers-button:hover {
+    background: rgb(105, 80, 50);
+}

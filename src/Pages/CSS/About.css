@@ -1,0 +1,87 @@
+.about-container {
+    padding: 80px;
+    background-color:transparent;/* Ngjyrë neutrale për të pastruar pamjen */
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 100px auto; /* Vendosja në qendër dhe hapësira e mjaftueshme poshtë navbar-it */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family: 'Georgia', serif;
+  }
+  
+  .about-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3em;
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .about-image-large {
+    flex: 1;
+  }
+  
+  .about-image-large-content {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .about-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .about-history-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .history-description {
+    font-size: 1em;
+    color: #444;
+    text-align: center;
+  }
+  
+  .about-map {
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .map-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  

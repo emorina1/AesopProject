@@ -1,0 +1,95 @@
+.newsletter {
+   width: 100%;
+   max-width: 800px; /* Ose ndonjë lartësi e dëshiruar */
+   margin: auto;
+   position: relative; /* Nevojitet për pozicionimin e butonave */
+}
+
+.slider {
+   display: flex; /* Aktivizon Flexbox */
+   justify-content: center; /* Qendron horizontalisht */
+   align-items: center; /* Qendron vertikalisht */
+   height: 300px; /* Lartësia e slider-it */
+   position: relative; /* Nevojitet për butonat */
+   overflow: hidden; /* Siguron që imazhi të mos kalojë jashtë kontejnerit */
+   /* background: linear-gradient(to top, #4f2f16bf 0%, #e3c4bbc9 100%); */
+}
+
+.slider img {
+   width: auto; /* Imazhi ruan raportin e tij të aspektit */
+   height: 100%; /* Siguron që imazhi të mbulojë plotësisht lartësinë e slider-it */
+   object-fit: cover; /* Siguron që imazhi të mbulojë kontejnerin duke ruajtur raportin e aspektit */
+}
+
+.product-info {
+   text-align: center; /* Qendron informacioni i produktit */
+   margin-top: 10px; /* Hapësira midis slider-it dhe informacionit të produktit */
+}
+
+.price {
+   font-weight: bold; /* Bëni çmimin të dallohet */
+   color: #4f2f16; /* Ngjyra e çmimit, mund ta ndryshoni sipas dëshirës */
+}
+
+.additional-info {
+   position: relative;
+   display: flex; /* Aktivizon Flexbox për të vendosur tekstin dhe imazhin */
+   justify-content: space-between; /* Vendos tekstin dhe imazhin në anët e ndryshme */
+   align-items: center; /* Qendron vertikalisht */
+   margin-top: 20px; /* Hapësira midis informacionit të produktit dhe informacionit shtesë */
+   background: linear-gradient(to top, #4f2f16bf 0%, #e3c4bbc9 100%);
+   padding: 20px; /* Shtoni hapësirë brenda div-it për të rritur background-in */
+   border-radius: 8px; /* Shtoni këndet e rrumbullakosura për një pamje më të mirë (opsionale) */
+   height: 200px; /* Rritni lartësinë e background-it sipas nevojës */
+   width: auto; /* Siguron që background-i të mbushë të gjithë gjerësinë e div-it */
+}
+
+.text-container {
+   flex: 1; /* Merr hapësirën e mbetur */
+   padding-right: 20px; /* Hapësira midis tekstit dhe imazhit */
+}
+
+.additional-image {
+   width: 250px; /* Zmadhojeni imazhin sipas nevojës */
+   height: auto; /* Ruaj raportin e aspektit */
+}
+
+.slider .prev, .slider .next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   font-size: 18px;
+   z-index: 10;
+   border-radius: 50%;
+}
+
+.slider .prev {
+   left: 10px;
+}
+
+.slider .next {
+   right: 10px;
+}
+
+.slider .prev::before, .slider .next::before {
+   content: '';
+   display: block;
+   width: 0;
+   height: 0;
+   border-style: solid;
+}
+
+.slider .prev::before {
+   border-width: 8px 12px 8px 0;
+   border-color: transparent #fff transparent transparent;
+}
+
+.slider .next::before {
+   border-width: 8px 0 8px 12px;
+   border-color: transparent transparent transparent #fff;
+}
